@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 from pymongo import MongoClient
 from hashlib import sha256
 
-app = Flask(Project1)
+app = Flask(__name__)
 
 MONGO_URI = mongodb+srv://bitaansarkar2005:<devil2005tr@4567>@cluster1.4wutmsr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
 client = MongoClient(MONGO_URI)
